@@ -1,0 +1,10 @@
+CONVITE INTERATIVO — 15 ANOS DA ISABELLY
+
+Extraia o ZIP completo. Abra index.html no navegador, mantendo na mesma pasta:
+- arte_original_tiffany.png (a ilustração da capa)
+- trilha_isabelly.mp3 (A Thousand Years, a partir dos 19 s)
+
+O botão ♫ Música ligada/desligada permanece disponível durante todo o convite.
+A reprodução automática com som pode ser bloqueada pelo navegador, especialmente no celular; se isso acontecer, toque em qualquer lugar do convite ou em ♫ Ativar música para começar a ouvir.
+
+As demais páginas, a animação de abertura, o mapa e o WhatsApp foram preservados.
