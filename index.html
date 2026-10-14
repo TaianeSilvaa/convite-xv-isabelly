@@ -144,13 +144,12 @@
             <div class="paper-hole h1"></div><div class="paper-hole h2"></div><div class="paper-hole h3"></div><div class="paper-hole h4"></div>
             <div class="note-pin"></div>
             <div class="roll-top"></div><div class="roll-bottom"></div><div class="paper-noise"></div><div class="inner-frame"></div>
-            <div class="eyebrow write-item d1" style="color:#3b4c6d;position:relative;z-index:1">Data, horário e local</div>
             <h2 class="note-title write-item d2">Você está convidado(a)</h2>
             <p class="note-subtitle write-item d3">para celebrar uma noite muito especial ✨</p>
             <span class="detail write-item d4"><b>Data</b><small>05 de dezembro, às 20h</small></span>
             <span class="detail write-item d5"><b>Local</b><small>Kasarão</small></span>
             <span class="detail write-item d6"><b>Endereço</b><small>Rua 01, Av. do Nazário, 820 - Guajuviras, Canoas - RS, 92035-000</small></span>
-            <span class="detail write-item d7"><b>Contato</b><small>(51) 8969-9576</small></span>
+            <span class="detail write-item d7"><b>Confirmar presença até</b><small>15 de Novembro</small></span>
             <div class="note-flourish write-item d8">✦</div>
           </div>
         </div>
@@ -167,7 +166,6 @@
           <input id="qty" type="number" min="1" max="20" value="1" placeholder="Quantidade de convidados" aria-label="Quantidade de convidados">
         </div>
         <button class="action primary" id="rsvp">✧ CONFIRMAR PELO WHATSAPP</button>
-        <p class="tiny">A confirmação será enviada diretamente para o WhatsApp informado.</p>
       </div>
 
       <div class="view">
@@ -282,9 +280,8 @@ document.getElementById('next').onclick=()=>go(index+1);document.getElementById(
 document.getElementById('map').onclick=()=>{window.open(CONFIG.mapsUrl,'_blank')};
 document.getElementById('rsvp').onclick=()=>{
   const name=document.getElementById('guest').value.trim();
-  const qty=document.getElementById('qty').value||'1';
   if(!name){alert('Informe seu nome para confirmar.');return}
-  const msg=`Olá! Estou confirmando minha presença nos 15 anos da Isabelly! 💙✨\n\nNome: ${name}\nQuantidade de convidados: ${qty}\n\nEvento: 05 de dezembro às 20h\nLocal: Kasarão - Canoas/RS\n\nSerá um prazer participar desse momento especial!`;
+  const msg=`Olá! Estou confirmando minha presença nos 15 anos da Isabelly! 💙✨\n\nNome: ${name}\nSerá um prazer participar desse momento especial!`;
   window.open('https://wa.me/'+CONFIG.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank')
 };
 start();
