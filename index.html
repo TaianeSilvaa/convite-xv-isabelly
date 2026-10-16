@@ -217,9 +217,9 @@ function start(){
   update();
   heroImage.style.transform='none';
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){showContent();return;}
-  later(()=>focusOnBook(),3600);
-  later(()=>reveal.classList.add('show'),10250);
-  later(showContent,12850);
+  later(()=>focusOnBook(),1000);
+  later(()=>reveal.classList.add('show'),7000);
+  later(showContent,9850);
 }
 document.getElementById('skip').onclick=()=>{clearTimers();showContent()};
 document.getElementById('replay').onclick=start;
